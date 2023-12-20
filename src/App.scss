@@ -1,0 +1,842 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  width: 100%;
+}
+.topbar{
+  padding: 16px 80px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.menu{
+  display: flex;
+  gap: 32px;
+
+  &List{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &Item{
+    color: #2A2C1F;
+    font-family: Roboto;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none; 
+  }
+  &Icon{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  &Content{
+    display: flex;
+    gap: 16px;   
+  }
+}
+
+.header{
+  height: 686px;
+  display: flex;
+  background: #F5F5F2;
+ 
+  &Main{
+    display: flex;
+    flex-direction: column;
+  }
+  &Back{
+    text-align: right;
+    padding: 39px 0px 0px 0px;
+  }
+  &Content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 80px 0px 80px ;
+  }
+  &Title{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 67.2px;
+  }
+  &SupTitle{
+    width: 503px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &Item{
+    display: flex;
+    gap: 16px;
+  }
+  &Search{
+    width: 310px;
+    padding: 12px 0px 12px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #E7E8E3;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    gap: 12px;
+  }
+  &Input{
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+}
+
+.brands{
+  display: flex;
+  padding: 67px 80px 0px 80px;
+  justify-content: space-between;
+ 
+  &Title{
+    width: 243px;
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+   
+  &Icons{
+    display: flex;
+    gap: 32px;
+    cursor: pointer;
+  }
+}
+
+.work{
+  padding: 128px 80px 0px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  // margin-top: 100px;  // olib tashlayman keyn
+  
+  &Content{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  &Title{
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+
+  &SupTitle{
+    width: 754px;
+    color: #65665C;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  &Menu{
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.comfort{
+ padding: 128px 80px;
+ display: flex;
+ gap: 80px;
+
+ &Content{
+  width: 600px;
+  padding: 140px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ &Text{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+ }
+ &Title{
+  width: 453px;
+  color: #2A2C1F;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+ }
+ &SupTitle{
+  width: 520px;
+  color: #65665C;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; 
+ }
+ &Info{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+ }
+ &View{
+  display: flex;
+  gap: 10px;
+ }
+ &Link{
+  text-decoration: none;
+  color: #2A2C1F;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+ }
+
+}
+
+.quick{ 
+  display: flex;
+  gap: 80px;
+  padding: 0px 80px 128px 80px;
+
+  &Content{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 55px 0px;
+  }
+  &Text{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+  &Title{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+  &SupTitle{
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  &Menu{
+    display: flex;
+    gap: 67px;
+  }
+  &MenuList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &MenuIcon{
+    width: 48px;
+    height: 48px;
+    padding: 0px 8px;
+    border-radius: 8px;
+    background: #FAE8E1;
+  }
+  &MenuText{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &MenuTitle{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+  }
+  &MenuSupTitle{
+    width: 281px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &MenuSupText{
+    width: 245px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &View{
+    display: flex;
+    gap: 24px;
+  }
+  &Link{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &LinkItem{
+    text-decoration: none;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.properties{
+  background: #F5F5F2;
+  padding: 128px 80px 160px 80px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  
+  &Item{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+
+  }
+
+  &Title{
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+
+  &Text{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.6px;
+  }
+
+  &SupTitle{
+    color: #2A2C1F;
+    font-family: Roboto;  
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+
+  &Menu{
+    display: flex;
+    gap: 32px;
+  }
+
+  &MenuList{
+    width: 405px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  &MenuListItem{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  &Info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &List{
+    display: flex;
+    gap: 25px;
+  }
+  &InfoText{
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &View{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  &Link{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &LinkItem{
+    text-decoration: none;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+
+.locations{
+  background: #F5F5F2;
+  display: flex;
+  padding: 0px 80px 128px 80px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px; 
+
+  &Content{
+    display: flex;
+    padding: 0px 28px 0px 27px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &Title{
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+
+  &SupTitle{
+    width: 713px;
+    color: #65665C;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px; 
+  }
+
+  &Menu{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &MenuList{
+    display: flex;
+    gap: 16px;
+  }
+
+  &MenuItem{
+    width: 416px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 33px;
+    border-radius: 16px;
+    border: 1px solid #E7E8E3;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  &Text{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  &SupText{
+    color: #2A2C1F;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+  }
+
+  &View{
+    display: flex;
+    gap: 10px;
+  }
+  
+  &Icon{
+    width: 16px;
+    height: 24px;
+    cursor: pointer;
+  }
+  &LinkView{
+    display: flex;
+    gap: 24px;
+  }
+  &Link{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &Item{
+    text-decoration: none;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.rate{
+  display: flex;
+  padding: 0px 80px 160px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  &Content{
+    display: flex;
+    padding: 0px 82px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &Title{
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+
+  &SupTitle{
+    color: #65665C;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px; 
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  &Menu{
+    display: flex;
+    gap: 32px;
+  }
+
+  &MenuList{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid #E7E8E3;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+  &Text{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+
+
+.priority{
+  display: flex;
+  margin: 0px 80px 160px 80px;
+  flex-direction: column;
+  gap: 17px;
+  padding: 96px 256px;
+  border-radius: 24px;
+  background: #65665C;
+
+  &Icon{
+    width: 48px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 auto;
+    justify-content: center;
+    background: #FFF;
+  }
+
+  &Content{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  &Title{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+
+  &SupTitle{
+    color: #E7E8E3;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  &Button{
+    margin: 0 auto;
+  }
+}
+
+.blog{
+  display: flex;
+  background: #F5F5F2;
+  flex-direction: column;
+  gap: 80px;
+  padding: 128px 80px;
+
+  &Info{
+    display: flex;
+    justify-content: space-between;
+  }
+  &View{
+    padding-top: 138px;
+  }
+  &Content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &Text{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+  &Title{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+  &SupTitle{
+    width: 710px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  &Menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  &MenuList{
+    width: 405px;
+    border-radius: 16px;
+    border: 1px solid #E7E8E3;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+  &MenuContent{
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+  &MenuItem{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &MenuText{
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  &MenuInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  &MenuTitle{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.6px; 
+  }
+  &MenuSupTitle{
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &MenuRead{
+    display: flex;
+    gap: 10px;
+  }
+  &MenuLink{
+    text-decoration: none;
+    color: #2A2C1F;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+  }
+  &MenuIcon{
+    cursor: pointer;
+    align-items: center;
+  }
+}
+
+.footer{
+  display: flex;
+  padding: 64px 80px;
+  justify-content: space-between;
+
+  &Menu{
+    display: flex;
+    gap: 32px;
+  }
+
+  &MenuList{
+    width: 168px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &MenuLink{
+    text-decoration: none;
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &Content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &Text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &Title{
+    color: #2A2C1F;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &SupTitle{
+    width: 379px;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &Enter{
+    display: flex;
+    gap: 16px;
+  }
+  &Input{
+    width: 241px;
+    height: 48px;
+    padding: 12px 0px 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #E7E8E3;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+  &Info{
+    display: flex;
+    gap: 15px;
+  }
+  &InfoText{
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+.network{
+  height: 74px;
+  background: #F5F5F2;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 144px;
+  &Title{
+    cursor: pointer;
+    color: #65665C;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  &Icons{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
